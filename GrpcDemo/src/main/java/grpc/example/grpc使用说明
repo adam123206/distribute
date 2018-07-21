@@ -1,0 +1,4 @@
+1，创建xxx.proto 文件，文件内容，定义结构，request,response结构
+2，通过mvn protobuf:compile 和mvn protobuf:compile-custom 在target下生成对应java文件
+3，编写对应服务端接口实现类；
+4，编写客户端调用
