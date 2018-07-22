@@ -1,0 +1,21 @@
+@namespace("com.adam.serializer.avroDemo")
+protocol ExampleService{
+	
+	enum Suit{
+	
+		SPADES,IAMONDS,CLUBS,HEARTS
+	}
+	
+	record DataExample{
+	
+		string name;
+		int age;
+		boolean success;
+		Suit suit;
+		@javaclass("java.utilArrayList") addressList;
+		map<string> demoeMap;
+		
+	}
+	
+	void sayHello(string content,DataExample,data);
+}

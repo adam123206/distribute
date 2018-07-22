@@ -1,0 +1,13 @@
+{
+	"namespace":"com.adam.serializer.avroDemo",
+	"type":"record",
+	"name":"Demo",
+	"fields":[
+		
+		{"name":"name","type":"string"},
+		{"name":"age","type":["int",null]},
+		{"name":"dataList","type":{"type":"array","items":"long"}},
+		{"name":"dataMap","type":{"type":"map","values":"string"}}
+	]
+	
+}
