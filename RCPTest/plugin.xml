@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="rcptest.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="rcptest.Perspective"
+            id="RCPTest.perspective">
+      </perspective>
+   </extension>
+  <extension point="org.eclipse.ui.views">
+      <view id="rcptest.view.LeftView"
+         name="mune view"
+         class="rcptest.view.LeftView"
+         icon="icons/alt_window_16.gif"
+      />
+      <view id="rcptest.view.BottomView"
+         name="log view"
+         class="rcptest.view.BottomView"
+         icon="icons/alt_window_16.gif"
+      />
+      <view id="rcptest.view.TopView"
+         name="main view"
+         class="rcptest.view.TopView"
+         icon="icons/alt_window_16.gif"
+      />
+      <view id="rcptest.view.menuView.MenuOne"
+         name="menuOne"
+         class="rcptest.view.menuView.MenuOne"
+         icon="icons/alt_window_16.gif"
+      />
+       <view id="rcptest.view.menuView.MenuTwo"
+         name="menuTwo"
+         class="rcptest.view.menuView.MenuTwo"
+         icon="icons/alt_window_16.gif"
+      />
+       <view id="rcptest.view.menuView.MenuThree"
+         name="menuThree"
+         class="rcptest.view.menuView.MenuThree"
+         icon="icons/alt_window_16.gif"
+      />
+      <view id="rcptest.view.menuView.SliderTest"
+         name="slider test"
+         class="rcptest.view.menuView.SliderTest"
+         icon="icons/alt_window_16.gif"
+      />
+ </extension>
+
+
+</plugin>
